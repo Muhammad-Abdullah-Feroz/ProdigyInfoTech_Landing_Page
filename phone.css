@@ -1,0 +1,124 @@
+.nav-toggle{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #ff01f2;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+.bar{
+    width: 6vw;
+    height: 1.2vw;
+    border-radius: 5px;
+    position: relative;
+    background-color: #00c2e6;
+}
+
+.bar-1{
+    transform: translateY(-2.5px);
+}
+.bar-2{
+    transform: translateY(2.5px);
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -70vw;
+    background-color: #470777;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items:stretch; */
+    /* border: 2px solid green; */
+    width: 70vw;
+    z-index: 999;
+    border-right: 0.5px solid #00c2e6;
+    height: 100vh;
+    transition: left 0.5s ease-out;
+}
+.nav-toggled{
+    left:0vw;
+}
+.nav a {
+    text-decoration: none;
+    display: inline-block;
+    /* margin: 5px; */
+    color: inherit;
+    margin: 10px;
+    margin-left: 15px;
+    margin-right: auto;
+    transition:all 0.3;
+    /* padding: 25px; */
+    border-radius: 35px;
+    /* padding: 10px; */
+}
+.nav p {
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+.nav li {
+   width: 55vw;
+   justify-content: flex-start;
+}
+.nav a:hover li{
+    background-color: #00c2e6;
+    width: 55vw;
+    padding: 13px;
+    color: aliceblue;
+    /* padding: 10px; */
+    /* width: max-content; */
+    /* display: block; */
+}
+.web-container{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.main{
+    /* background: inherit; */
+    align-items: flex-start;
+}
+.main h1{
+    margin-left: 20px;
+}
+.main p{
+    margin-left: 20px;
+}
+.main::before{
+    content: "";
+    position: absolute;
+    /* top: 0px; */
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -10;
+    background: url(images/bgWebDevelopment.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: inherit;
+    background-position: right;
+    background-attachment: fixed;
+    width: 100%;
+    opacity: 0.4;
+}
+.skills p{
+    text-align: justify;
+}
+.about p{
+    text-align: justify;
+
+}
+.contact-icon-list{
+    display: flex;
+    flex-wrap: nowrap;
+    /* flex-direction: column; */
+}
+.skill-container{
+    width: 75vw;
+}
